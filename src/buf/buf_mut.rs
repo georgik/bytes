@@ -1302,7 +1302,7 @@ pub unsafe trait BufMut {
     ///
     /// assert_eq!(*buf, b"hello world"[..]);
     /// ```
-    #[cfg(feature = "std")]
+    // #[cfg(feature = "std")]
     #[cfg_attr(docsrs, doc(cfg(feature = "std")))]
     #[inline]
     fn writer(self) -> Writer<Self>
